@@ -1,0 +1,94 @@
+/* Minimal CSS Reset */
+
+html {
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* the magic begins here */
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.hero-section {
+    height: 100vh;
+    background: #d23;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-name {
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.hero-about {
+    font-size: 3em;
+}
+
+.hero-read {
+    margin-top: 1em;
+}
+
+.hero-read button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+    background-size: 200% auto;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%)
+}
+
+.btn-grad:hover {
+    background-position: right center;
+}
+
+#particles-js {
+    position: absolute;
+    height: 95vh;
+    width: 100%;
+}
