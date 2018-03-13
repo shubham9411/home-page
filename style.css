@@ -51,6 +51,9 @@ body {
     flex-direction: column;
     text-align: center;
 }
+.hero-section div{
+    z-index: 11111;
+}
 
 .hero-name {
     font-size: 5em;
@@ -59,6 +62,7 @@ body {
 
 .hero-about {
     font-size: 3em;
+    padding: 0.3em 0;
 }
 
 .hero-read {
@@ -91,4 +95,44 @@ body {
     position: absolute;
     height: 95vh;
     width: 100%;
+}
+.hero-links{
+    padding: 1em 0;
+}
+.hero-links i{
+    font-size: 5em;
+}
+.hero-links a {
+    color: #000;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.hero-links img {
+    color: #000;
+    height: 4em;
+    text-decoration: none;
+}
+
+@media (max-width: 576px){
+    .hero-links i {
+        font-size: 3em;
+    }
+
+    .hero-links img {
+        height: 3em;
+    }
+
+    .hero-name {
+        font-size: 3.5em;
+    }
+    .hero-about {
+        font-size: 2em;
+    }
+}
+.no-link{
+    color: #000;
+    text-decoration: none;
+}
+.white{
+    color: #fff;
 }
